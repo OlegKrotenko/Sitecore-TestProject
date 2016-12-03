@@ -1,0 +1,14 @@
+C:\Users\krotenko\Desktop\SitecorePrj-master\Library.Repository\bin\Debug\Library.Repository.dll
+C:\Users\krotenko\Desktop\SitecorePrj-master\Library.Repository\bin\Debug\Library.Repository.pdb
+C:\Users\krotenko\Desktop\SitecorePrj-master\Library.Repository\bin\Debug\Library.Domain.dll
+C:\Users\krotenko\Desktop\SitecorePrj-master\Library.Repository\bin\Debug\Library.Domain.pdb
+C:\Users\krotenko\Desktop\SitecorePrj-master\Library.Repository\obj\Debug\Library.Repository.dll
+C:\Users\krotenko\Desktop\SitecorePrj-master\Library.Repository\obj\Debug\Library.Repository.pdb
+C:\Users\krotenko\Desktop\SitecorePrj-master\Library.Repository\obj\Debug\Library.Repository.csprojResolveAssemblyReference.cache
+C:\Users\123\Desktop\SitecorePrj-master\Library.Repository\bin\Debug\Library.Repository.dll
+C:\Users\123\Desktop\SitecorePrj-master\Library.Repository\bin\Debug\Library.Repository.pdb
+C:\Users\123\Desktop\SitecorePrj-master\Library.Repository\bin\Debug\Library.Domain.dll
+C:\Users\123\Desktop\SitecorePrj-master\Library.Repository\bin\Debug\Library.Domain.pdb
+C:\Users\123\Desktop\SitecorePrj-master\Library.Repository\obj\Debug\Library.Repository.csprojResolveAssemblyReference.cache
+C:\Users\123\Desktop\SitecorePrj-master\Library.Repository\obj\Debug\Library.Repository.dll
+C:\Users\123\Desktop\SitecorePrj-master\Library.Repository\obj\Debug\Library.Repository.pdb

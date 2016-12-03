@@ -1,0 +1,64 @@
+﻿@model List<Library.Domain.Models.Author>
+<script src="~/Scripts/custom/LibraryScript.js"></script>
+
+<div class="row">
+    <div class="col-lg-6">
+        <p>Here you can add new Book</p>
+        <form data-toggle="validator">
+            <div class="form-group">
+                <label for="title">Book Title</label>
+                <input oninput="makeBlack('title')" id="title" type="text" required placeholder="Book Title" /><br />
+                <label for="quantity">Book Quantity</label>
+                <input id="quantity" type="number" min="0" required value="0" /><br />
+            </div>
+        </form>
+        <input type="text" id="newAuthor" />
+        <button class="btn btn-default" onclick="addNewAuthor()"> Add new Author</button> <br />
+        <button class="btn btn-default" onclick="saveNewBook()">Add and save</button>
+        <div class="form-group">
+            <label for="authorsList">Authors will add here</label>     
+            <textarea id="authorsList" class="form-control" rows="5" readonly></textarea>
+            <button class="btn btn-sm" onclick="clearBox()">clear box</button>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <p>Press on exist author to add in your book</p>
+
+
+        <table class="table">
+            <thead>
+                <tr>               
+                    <th>Author name</th>
+                </tr>
+            </thead>
+            <tbody id="authorTbBody">
+                @for (int i = 0; i < Model.Count; i++)
+                {
+                    <tr>
+                        <td name="@Model[i].Id" onclick="authorAdd(this)">@Model[i].Name</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <div class="btn-group" role="group" id="pagingAuthors">
+        </div>
+    </div>
+</div>
+
+<script>
+        var tbodyAuthors = document.getElementById("authorTbBody");
+        var pageCounterForAuthorTable = 0;
+
+        for (var i = 0; i < tbodyAuthors.rows.length; i++) {
+            if (i % 5 == 0) {
+                pageCounterForAuthorTable += 1;
+                var paging = document.getElementById('pagingAuthors');
+                paging.innerHTML = paging.innerHTML +
+                    '<button type="button" class="btn btn-secondary" onclick ="hideAuthors('
+                    + pageCounterForAuthorTable + ');">' + (pageCounterForAuthorTable) + '</button>';
+            }
+        }
+        window.onload = function () {
+            hideAuthors(1);
+        };
+</script>

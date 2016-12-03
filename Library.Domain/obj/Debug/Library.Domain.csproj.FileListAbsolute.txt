@@ -1,0 +1,14 @@
+c:\users\123\documents\visual studio 2015\Projects\ConsoleApplication33\Library.Domain\bin\Debug\Library.Domain.dll
+c:\users\123\documents\visual studio 2015\Projects\ConsoleApplication33\Library.Domain\bin\Debug\Library.Domain.pdb
+c:\users\123\documents\visual studio 2015\Projects\ConsoleApplication33\Library.Domain\obj\Debug\Library.Domain.dll
+c:\users\123\documents\visual studio 2015\Projects\ConsoleApplication33\Library.Domain\obj\Debug\Library.Domain.pdb
+C:\Users\krotenko\Desktop\SitecorePrj-master\Library.Domain\bin\Debug\Library.Domain.dll
+C:\Users\krotenko\Desktop\SitecorePrj-master\Library.Domain\bin\Debug\Library.Domain.pdb
+C:\Users\krotenko\Desktop\SitecorePrj-master\Library.Domain\obj\Debug\Library.Domain.csprojResolveAssemblyReference.cache
+C:\Users\krotenko\Desktop\SitecorePrj-master\Library.Domain\obj\Debug\Library.Domain.dll
+C:\Users\krotenko\Desktop\SitecorePrj-master\Library.Domain\obj\Debug\Library.Domain.pdb
+C:\Users\123\Desktop\SitecorePrj-master\Library.Domain\bin\Debug\Library.Domain.dll
+C:\Users\123\Desktop\SitecorePrj-master\Library.Domain\bin\Debug\Library.Domain.pdb
+C:\Users\123\Desktop\SitecorePrj-master\Library.Domain\obj\Debug\Library.Domain.csprojResolveAssemblyReference.cache
+C:\Users\123\Desktop\SitecorePrj-master\Library.Domain\obj\Debug\Library.Domain.dll
+C:\Users\123\Desktop\SitecorePrj-master\Library.Domain\obj\Debug\Library.Domain.pdb

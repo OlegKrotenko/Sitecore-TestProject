@@ -1,0 +1,110 @@
+﻿@model List<Library.Domain.Models.Book>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<script src="~/Scripts/custom/LibraryScript.js"></script>
+
+<div id="index">
+    <!--DELETE MODAL-->
+    <div class="modal fade" id="deleteModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Record Deleting</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Are you shure?</p>
+                </div>
+                <div class="modal-footer">
+                    <input hidden value="null" id="bookIdHandler" />
+                    <button onclick="deleteBook()" type="button" class="btn btn-default" data-dismiss="modal">Yes</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Change quantity modal-->
+    <div class="modal fade" id="changeQuantityModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Change Quantity of Book</h4>
+                </div>
+                <div class="modal-body">
+                    <input type="number" min="0" id="newQuantity" /> <span>enter new book quantity</span>
+                </div>
+                <div class="modal-footer">
+                    <input hidden value="null" id="bookIdHandler" />
+                    <button onclick="setNewQuantity()" type="button" class="btn btn-default" data-dismiss="modal">Yes</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#home">Library</a></li>
+        <li><a data-toggle="tab" href="#addNewBookMenu">Add new Book</a></li>
+        <li><a data-toggle="tab" href="#ShowHistoryMenu">Histories</a></li>
+    </ul>
+
+
+    <div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+            <div id="libraryBooks">
+                @Html.Partial("_LibraryBooks", Model)
+            </div>
+        </div>
+
+
+
+
+
+
+        @*dsadsa*@
+        <div id="addNewBookMenu" class="tab-pane fade">
+          @{ Html.RenderAction("AddNewBook", "Library");}
+        </div>
+
+        <div id="ShowHistoryMenu" class="tab-pane fade">
+           @{Html.RenderAction("Histories", "Library");}
+            @*@Html.Partial("_Histories", TempData["histories"])*@
+        </div>
+
+    </div>
+</div>
+
+<script>
+    function hideAuthors(page) {
+        console.log(page);
+        var maxElementOnPage = 5;
+        var tbodyAuthors = document.getElementById("authorTbBody");
+
+        for (var i = 0; i < tbodyAuthors.rows.length; i++) {
+            if (page * maxElements > i && i >= page * maxElements - maxElements) {
+                //console.log(tbodyAuthors.rows[i]);
+                //console.log("next");
+                $(tbodyAuthors.rows[i]).show();
+            }
+            else {
+                $(tbodyAuthors.rows[i]).hide();
+            }
+            //    var paging = document.getElementById('pagingAuthors');
+            //    paging.innerHTML = paging.innerHTML +
+            //        '<button type="button" class="btn btn-secondary" onclick ="hideAuthors('
+            //        + pageCounterForAuthorTable + ');">' + (pageCounterForAuthorTable) + '</button>';
+            //}
+        }
+    }
+</script>
